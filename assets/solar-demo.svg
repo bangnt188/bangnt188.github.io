@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#10251b"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173b5e"/>
+      <stop offset="1" stop-color="#0c2238"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="32" fill="url(#sky)"/>
+  <circle cx="720" cy="110" r="54" fill="#8bf5bd" opacity=".85"/>
+  <path d="M0 410L210 260 390 365 590 210 900 390V520H0z" fill="#0d3a2b"/>
+  <g transform="translate(170 250) skewX(-14)">
+    <rect width="500" height="150" rx="10" fill="url(#panel)" stroke="#7cc7ff" stroke-opacity=".4"/>
+    <path d="M100 0v150M200 0v150M300 0v150M400 0v150M0 50h500M0 100h500" stroke="#7cc7ff" stroke-opacity=".26"/>
+  </g>
+  <text x="72" y="90" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="44" font-weight="700">Solar Demo</text>
+  <text x="72" y="132" fill="#9da7b4" font-family="Arial, sans-serif" font-size="24">Next.js · TypeScript · PostgreSQL</text>
+</svg>
