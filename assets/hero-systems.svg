@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#08110d"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cc7ff"/>
+      <stop offset="1" stop-color="#8bf5bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="42" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#ffffff">
+    <path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M0 600h1200"/>
+    <path d="M160 0v700M320 0v700M480 0v700M640 0v700M800 0v700M960 0v700"/>
+  </g>
+  <rect x="130" y="130" width="340" height="210" rx="24" fill="#111827" stroke="#7cc7ff" stroke-opacity=".35"/>
+  <rect x="730" y="360" width="340" height="210" rx="24" fill="#111827" stroke="#8bf5bd" stroke-opacity=".35"/>
+  <path d="M470 235C610 235 615 465 730 465" fill="none" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="470" cy="235" r="12" fill="#7cc7ff"/>
+  <circle cx="730" cy="465" r="12" fill="#8bf5bd"/>
+  <text x="170" y="215" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="46" font-weight="700">Backend</text>
+  <text x="170" y="270" fill="#9da7b4" font-family="Arial, sans-serif" font-size="26">Go · Node.js · PostgreSQL</text>
+  <text x="770" y="445" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="46" font-weight="700">Frontend</text>
+  <text x="770" y="500" fill="#9da7b4" font-family="Arial, sans-serif" font-size="26">React · Next.js · Svelte</text>
+  <text x="130" y="610" fill="#8bf5bd" font-family="Arial, sans-serif" font-size="24" font-weight="700">SYSTEMS THINKING → PRODUCT DELIVERY</text>
+</svg>
