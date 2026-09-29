@@ -1,48 +1,115 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Demo hub của bangnt188 trên GitHub Pages." />
-  <title>bangnt188 · Demo Hub</title>
+  <meta name="description" content="TBang — Full-Stack Engineer focused on Go, Svelte, Next.js, distributed systems, CI/CD and system design." />
+  <title>TBang · Full-Stack Engineer</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <main class="shell">
     <section class="hero">
-      <p class="eyebrow">GITHUB PAGES · DEMO HUB</p>
-      <h1>Projects & demos</h1>
-      <p class="intro">Nơi tập hợp các bản demo đang public trên GitHub Pages.</p>
+      <p class="eyebrow">FULL-STACK ENGINEER · GO · SVELTE · NEXT.JS</p>
+      <h1>Hey, I'm TBang.</h1>
+      <p class="headline">Building systems that scale, interfaces that delight.</p>
+      <p class="intro">
+        Backend-leaning full-stack engineer with 3 YOE. I design backend systems with Go,
+        build clean APIs and CI/CD pipelines, and craft production-ready web experiences.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="mailto:nguyenbang.skyone@gmail.com">Email me</a>
+        <a class="button" href="https://www.linkedin.com/in/bang-nguyen-182489255/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a class="button" href="https://github.com/bangnt188" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
     </section>
 
-    <section class="projects" aria-label="Danh sách dự án">
-      <a class="card" href="/solar_demo/" aria-label="Mở Solar Demo">
-        <div class="card-top">
-          <span class="badge">Live demo</span>
-          <span class="arrow">↗</span>
-        </div>
-        <div>
-          <h2>Solar Demo</h2>
-          <p>Website demo cho dự án Solar, đang deploy từ branch <strong>dev</strong>.</p>
-        </div>
-        <span class="path">/solar_demo/</span>
-      </a>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I WORK ON</p>
+        <h2>Systems, product delivery and developer experience.</h2>
+      </div>
+      <div class="grid three">
+        <article class="info-card">
+          <span class="kicker">Backend</span>
+          <h3>Go & distributed systems</h3>
+          <p>Microservices, REST/gRPC APIs, PostgreSQL, Redis, auth, RBAC/ABAC and multi-tenant architecture.</p>
+        </article>
+        <article class="info-card">
+          <span class="kicker">Frontend</span>
+          <h3>Svelte & Next.js</h3>
+          <p>Reactive interfaces, component systems, production web apps and clean integration with backend services.</p>
+        </article>
+        <article class="info-card">
+          <span class="kicker">Platform</span>
+          <h3>CI/CD & infrastructure</h3>
+          <p>GitHub Actions, GitLab CI, Docker, Linux and deployment flows from prototype to production.</p>
+        </article>
+      </div>
+    </section>
 
-      <div class="card muted" aria-disabled="true">
-        <div class="card-top">
-          <span class="badge subtle">Coming soon</span>
-        </div>
-        <div>
-          <h2>Next project</h2>
-          <p>Các demo mới sẽ được thêm vào đây khi được public.</p>
-        </div>
-        <span class="path">Ready for more</span>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">FEATURED WORK</p>
+        <h2>Selected projects & demos.</h2>
+      </div>
+      <div class="projects">
+        <a class="card" href="/solar_demo/" aria-label="Open Solar Demo">
+          <div class="card-top">
+            <span class="badge">Live demo</span>
+            <span class="arrow">↗</span>
+          </div>
+          <div>
+            <h3>Solar Demo</h3>
+            <p>Next.js solar company website demo with a path toward dynamic content, admin, PostgreSQL and object storage.</p>
+          </div>
+          <span class="path">bangnt188.github.io/solar_demo/</span>
+        </a>
+
+        <article class="card">
+          <div class="card-top"><span class="badge subtle">Platform</span></div>
+          <div>
+            <h3>SkyHRM / Orbit</h3>
+            <p>Multi-tenant HRM platform using Go microservices and Svelte micro-frontends, including attendance and authorization flows.</p>
+          </div>
+          <span class="path">Go · Svelte · RBAC/ABAC · CI/CD</span>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="badge subtle">In progress</span></div>
+          <div>
+            <h3>Homestay Booking Platform</h3>
+            <p>Serverless booking flow with Next.js, Firebase, payment integration, promotion rules, eKYC and media management.</p>
+          </div>
+          <span class="path">Next.js · Firebase · Cloudinary</span>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="badge subtle">Developer tooling</span></div>
+          <div>
+            <h3>AI Agent Dev Tooling</h3>
+            <p>Reusable agent rules, engineering workflows and BA documentation automation for backend and frontend teams.</p>
+          </div>
+          <span class="path">Agentic workflows · DX · Automation</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Open to backend, architecture and web delivery discussions.</h2>
+        <p class="intro compact">Currently growing toward Senior Backend Engineer → Solutions Architect.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:nguyenbang.skyone@gmail.com">nguyenbang.skyone@gmail.com</a>
+        <a href="https://www.linkedin.com/in/bang-nguyen-182489255/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
     </section>
 
     <footer>
-      <span>bangnt188.github.io</span>
-      <a href="https://github.com/bangnt188" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+      <span>TBang · bangnt188.github.io</span>
+      <span>Go · Svelte · Next.js · PostgreSQL · Docker</span>
     </footer>
   </main>
 </body>
