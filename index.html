@@ -70,16 +70,79 @@
             </div>
           </div>
 
-          <div class="project-visual project-visual-code" aria-hidden="true">
-            <div class="window-bar"><span></span><span></span><span></span></div>
-            <div class="diagram">
-              <div class="diagram-label">B2B leasing workflow</div>
-              <div class="flow-row">
-                <span>Request</span><i></i><span>Approve</span><i></i><span>Timed hold</span>
+          <div class="project-visual project-visual-3d" data-l3d>
+            <div class="l3d-heading">
+              <span>Interactive building explorer</span>
+              <span data-l3d-status>Drag to rotate · scroll to zoom</span>
+            </div>
+            <div class="l3d-viewport" aria-label="Interactive 3D model of five building floors">
+              <div class="l3d-scene" data-l3d-scene>
+                <div class="l3d-ground"></div>
+              <div class="l3d-floor" data-l3d-floor="1">
+                <div class="l3d-face l3d-bottom"></div>
+                <div class="l3d-face l3d-top"></div>
+                <div class="l3d-face l3d-front"></div>
+                <div class="l3d-face l3d-back"></div>
+                <div class="l3d-face l3d-left"></div>
+                <div class="l3d-face l3d-right"></div>
+                <span class="l3d-floor-label">T1</span>
+                <span class="l3d-slot s1"></span><span class="l3d-slot s2"></span><span class="l3d-slot s3"></span>
+                <span class="l3d-slot s4"></span><span class="l3d-slot s5"></span>
               </div>
-              <div class="flow-row muted-flow">
-                <span>Floor inventory</span><i></i><span>Contract</span><i></i><span>Tenant portal</span>
+              <div class="l3d-floor" data-l3d-floor="2">
+                <div class="l3d-face l3d-bottom"></div>
+                <div class="l3d-face l3d-top"></div>
+                <div class="l3d-face l3d-front"></div>
+                <div class="l3d-face l3d-back"></div>
+                <div class="l3d-face l3d-left"></div>
+                <div class="l3d-face l3d-right"></div>
+                <span class="l3d-floor-label">T2</span>
+                <span class="l3d-slot s1"></span><span class="l3d-slot s2"></span><span class="l3d-slot s3"></span>
+                <span class="l3d-slot s4"></span><span class="l3d-slot s5"></span>
               </div>
+              <div class="l3d-floor" data-l3d-floor="3">
+                <div class="l3d-face l3d-bottom"></div>
+                <div class="l3d-face l3d-top"></div>
+                <div class="l3d-face l3d-front"></div>
+                <div class="l3d-face l3d-back"></div>
+                <div class="l3d-face l3d-left"></div>
+                <div class="l3d-face l3d-right"></div>
+                <span class="l3d-floor-label">T3</span>
+                <span class="l3d-slot s1"></span><span class="l3d-slot s2"></span><span class="l3d-slot s3"></span>
+                <span class="l3d-slot s4"></span><span class="l3d-slot s5"></span>
+              </div>
+              <div class="l3d-floor" data-l3d-floor="4">
+                <div class="l3d-face l3d-bottom"></div>
+                <div class="l3d-face l3d-top"></div>
+                <div class="l3d-face l3d-front"></div>
+                <div class="l3d-face l3d-back"></div>
+                <div class="l3d-face l3d-left"></div>
+                <div class="l3d-face l3d-right"></div>
+                <span class="l3d-floor-label">T4</span>
+                <span class="l3d-slot s1"></span><span class="l3d-slot s2"></span><span class="l3d-slot s3"></span>
+                <span class="l3d-slot s4"></span><span class="l3d-slot s5"></span>
+              </div>
+              <div class="l3d-floor" data-l3d-floor="5">
+                <div class="l3d-face l3d-bottom"></div>
+                <div class="l3d-face l3d-top"></div>
+                <div class="l3d-face l3d-front"></div>
+                <div class="l3d-face l3d-back"></div>
+                <div class="l3d-face l3d-left"></div>
+                <div class="l3d-face l3d-right"></div>
+                <span class="l3d-floor-label">T5</span>
+                <span class="l3d-slot s1"></span><span class="l3d-slot s2"></span><span class="l3d-slot s3"></span>
+                <span class="l3d-slot s4"></span><span class="l3d-slot s5"></span>
+              </div>
+              </div>
+            </div>
+            <div class="l3d-controls" aria-label="3D floor controls">
+              <button type="button" class="is-active" data-l3d-select="all">All</button>
+              <button type="button" data-l3d-select="1">T1</button>
+              <button type="button" data-l3d-select="2">T2</button>
+              <button type="button" data-l3d-select="3">T3</button>
+              <button type="button" data-l3d-select="4">T4</button>
+              <button type="button" data-l3d-select="5">T5</button>
+              <button type="button" data-l3d-reset>Reset</button>
             </div>
           </div>
         </article>
@@ -192,5 +255,5 @@
     <span>TBang · Full-Stack Engineer</span>
     <span>Go · Node.js · TypeScript · React · Next.js · Svelte</span>
   </footer>
-</body>
+  <script src="./assets/le-grande-3d.js" defer></script>\n</body>
 </html>
