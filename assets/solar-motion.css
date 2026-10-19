@@ -1,0 +1,176 @@
+/* Synced from bangnt188/component-ui/styles/motion.css (@solar/ui/motion).
+   Static portfolio loads only motion styles; no React or @solar/ui reset/theme. */
+@layer ui-motion {
+  :root {
+    --ui-motion-duration-quick: 160ms;
+    --ui-motion-duration-fast: 240ms;
+    --ui-motion-duration-medium: 280ms;
+    --ui-motion-duration-base: 420ms;
+    --ui-motion-duration-reveal: 760ms;
+    --ui-motion-duration-media: 880ms;
+    --ui-motion-duration-slow: 1100ms;
+    --ui-motion-duration-showcase: 2000ms;
+    --ui-motion-ease-standard: cubic-bezier(.2, 0, 0, 1);
+    --ui-motion-ease-enter: cubic-bezier(.16, 1, .3, 1);
+    --ui-motion-ease-exit: cubic-bezier(.4, 0, 1, 1);
+    --ui-motion-stagger-micro: 30ms;
+    --ui-motion-stagger-tight: 60ms;
+    --ui-motion-stagger-normal: 90ms;
+    --ui-motion-stagger-relaxed: 120ms;
+    --ui-motion-stagger-cap: 360ms;
+    --ui-motion-distance-sm: 16px;
+    --ui-motion-distance-md: 32px;
+    --ui-motion-distance-lg: 48px;
+  }
+
+  .ui-reveal-ready [data-reveal] {
+    --ui-reveal-duration: var(--ui-motion-duration-reveal);
+    --ui-reveal-delay: 0ms;
+    --ui-reveal-ease: var(--ui-motion-ease-enter);
+    --ui-reveal-x: 0px;
+    --ui-reveal-y: 32px;
+    --ui-reveal-scale: 1;
+    --ui-reveal-rotate: 0deg;
+    --ui-reveal-blur: 0px;
+    --ui-reveal-start-opacity: 0;
+
+    opacity: var(--ui-reveal-start-opacity);
+    transform:
+      translate3d(var(--ui-reveal-x), var(--ui-reveal-y), 0)
+      scale(var(--ui-reveal-scale))
+      rotate(var(--ui-reveal-rotate));
+    filter: blur(var(--ui-reveal-blur));
+    transition:
+      opacity var(--ui-reveal-duration) var(--ui-reveal-ease) var(--ui-reveal-delay),
+      transform var(--ui-reveal-duration) var(--ui-reveal-ease) var(--ui-reveal-delay),
+      filter var(--ui-reveal-duration) var(--ui-reveal-ease) var(--ui-reveal-delay);
+    backface-visibility: hidden;
+  }
+
+  .ui-reveal-ready [data-reveal]:not(.revealed) {
+    will-change: opacity, transform;
+  }
+
+  .ui-reveal-ready [data-reveal="fade-up"] {
+    --ui-reveal-y: 32px;
+  }
+
+  .ui-reveal-ready [data-reveal="zoom-in"] {
+    --ui-reveal-y: 16px;
+    --ui-reveal-scale: .94;
+  }
+
+  .ui-reveal-ready [data-reveal="zoom-out"] {
+    --ui-reveal-y: 16px;
+    --ui-reveal-scale: 1.06;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-left"] {
+    --ui-reveal-x: -36px;
+    --ui-reveal-y: 0px;
+    --ui-reveal-scale: .99;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-right"] {
+    --ui-reveal-x: 36px;
+    --ui-reveal-y: 0px;
+    --ui-reveal-scale: .99;
+  }
+
+  .ui-reveal-ready [data-reveal="lift-in"] {
+    --ui-reveal-y: 48px;
+    --ui-reveal-scale: .97;
+  }
+
+  .ui-reveal-ready [data-reveal="tilt-in"] {
+    --ui-reveal-y: 28px;
+    --ui-reveal-scale: .96;
+    --ui-reveal-rotate: -2deg;
+  }
+
+  .ui-reveal-ready [data-reveal][data-reveal-intensity="subtle"] {
+    --ui-reveal-y: 18px;
+    --ui-reveal-scale: .99;
+    --ui-reveal-rotate: 0deg;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-left"][data-reveal-intensity="subtle"] {
+    --ui-reveal-x: -20px;
+    --ui-reveal-y: 0px;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-right"][data-reveal-intensity="subtle"] {
+    --ui-reveal-x: 20px;
+    --ui-reveal-y: 0px;
+  }
+
+  .ui-reveal-ready [data-reveal][data-reveal-soft] {
+    --ui-reveal-blur: 6px;
+    will-change: opacity, transform, filter;
+  }
+
+  .ui-reveal-ready [data-reveal="fade-up"][data-reveal-intensity="showcase"] {
+    --ui-reveal-y: 56px;
+    --ui-reveal-blur: 14px;
+  }
+
+  .ui-reveal-ready [data-reveal="zoom-in"][data-reveal-intensity="showcase"] {
+    --ui-reveal-y: 26px;
+    --ui-reveal-scale: .84;
+    --ui-reveal-blur: 10px;
+  }
+
+  .ui-reveal-ready [data-reveal="zoom-out"][data-reveal-intensity="showcase"] {
+    --ui-reveal-y: 22px;
+    --ui-reveal-scale: 1.12;
+    --ui-reveal-blur: 8px;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-left"][data-reveal-intensity="showcase"] {
+    --ui-reveal-x: -64px;
+    --ui-reveal-y: 0px;
+    --ui-reveal-scale: .98;
+    --ui-reveal-blur: 10px;
+  }
+
+  .ui-reveal-ready [data-reveal="slide-right"][data-reveal-intensity="showcase"] {
+    --ui-reveal-x: 64px;
+    --ui-reveal-y: 0px;
+    --ui-reveal-scale: .98;
+    --ui-reveal-blur: 10px;
+  }
+
+  .ui-reveal-ready [data-reveal="lift-in"][data-reveal-intensity="showcase"] {
+    --ui-reveal-y: 72px;
+    --ui-reveal-scale: .90;
+    --ui-reveal-blur: 14px;
+  }
+
+  .ui-reveal-ready [data-reveal="tilt-in"][data-reveal-intensity="showcase"] {
+    --ui-reveal-y: 36px;
+    --ui-reveal-scale: .92;
+    --ui-reveal-rotate: -3deg;
+    --ui-reveal-blur: 12px;
+  }
+
+  .ui-reveal-ready [data-reveal][data-reveal-intensity="showcase"]:not(.revealed) {
+    will-change: opacity, transform, filter;
+  }
+
+  .ui-reveal-ready [data-reveal].revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+    filter: blur(0);
+    will-change: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ui-reveal-ready [data-reveal] {
+      opacity: 1 !important;
+      transform: none !important;
+      filter: none !important;
+      transition: none !important;
+      will-change: auto !important;
+    }
+  }
+}
